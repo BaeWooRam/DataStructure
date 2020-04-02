@@ -101,5 +101,5 @@ https://ko.wikipedia.org/wiki/%EC%A0%95%EB%A0%AC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%
 ## 이진 탐색
 반씩 제외시키면서 찾기    
     
-##참조
+## 참조    
 https://nittaku.tistory.com/487
