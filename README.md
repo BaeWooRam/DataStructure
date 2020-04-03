@@ -79,6 +79,14 @@
 https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html
 
 **4. 셸 정렬(Shell Sort)**    
+정렬해야할 리스트의 각 Interval번째 요소를 추출해서 부분 리스트를 만든다.     
+Interval 초기값 : 리스트 수/2     
+    
+각 회전마다 Interval은 절반으로 준다. 즉, 각 회전이 반복될 때마다 하나의 부분 리스트에 속한 값들의 개수는 증가한다.    
+Interval을 절반으로 줄일 때, 짝수면 홀수로 만든다.    
+     
+Interval이 1이 될 때까지 반복한다.    
+![image](https://user-images.githubusercontent.com/41356481/78324669-4a550080-75b0-11ea-97c1-311b5f919c76.png)
 
 https://gmlwjd9405.github.io/2018/05/08/algorithm-shell-sort.html
 
@@ -95,3 +103,13 @@ https://ko.wikipedia.org/wiki/%EC%A0%95%EB%A0%AC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%
       
        
 # 탐색
+## 선형 탐색
+순서대로 하나씩 찾기   
+정렬 상관 없음
+    
+## 이진 탐색
+반씩 제외시키면서 찾기 
+정렬이 되어 있어야함
+    
+## 참조    
+https://nittaku.tistory.com/487
