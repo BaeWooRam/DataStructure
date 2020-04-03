@@ -97,9 +97,11 @@ https://ko.wikipedia.org/wiki/%EC%A0%95%EB%A0%AC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%
 # 탐색
 ## 선형 탐색
 순서대로 하나씩 찾기   
+정렬 상관 없음
     
 ## 이진 탐색
-반씩 제외시키면서 찾기    
+반씩 제외시키면서 찾기 
+정렬이 되어 있어야함
     
 ## 참조    
 https://nittaku.tistory.com/487
