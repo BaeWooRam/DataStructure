@@ -2,18 +2,15 @@ package com.test.datastructure.sort
 
 import org.junit.Test
 
-class InsertionSort {
+class InsertionSort: BaseTest() {
     //출처 https://mygumi.tistory.com/310
     private val dataList = intArrayOf(0, 2, 1, 100, 82, 89, 99, 21, 26, 37, 10, 31, 19, 14, 77, 55, 33)
 
     @Test
     fun test(){
+        showArray(dataList)
         insertionSort(dataList)
-
-        for(data in dataList){
-            println("quickSort value = $data")
-        }
-
+        showArray(dataList)
     }
 
     //삽입정렬(insertion sort)

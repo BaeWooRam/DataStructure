@@ -3,16 +3,14 @@ package com.test.datastructure.sort
 import android.util.Log
 import org.junit.Test
 
-class QuickSort {
-    private val dataList = intArrayOf(0, 2, 1, 100, 82, 89, 99, 21, 26, 37, 10, 31, 19, 14, 77, 55, 33)
+class QuickSort:BaseTest() {
+    private val dataList = intArrayOf(5,6,7,1,2,10,4,9,8,10,1,4)
 
     @Test
     fun test(){
+        showArray(dataList)
         quickSort(dataList, 0, dataList.size - 1)
-
-        for(data in dataList){
-            println("quickSort value = $data")
-        }
+        showArray(dataList)
     }
 
     private fun quickSort(array: IntArray, left: Int, right: Int) {
@@ -26,7 +24,7 @@ class QuickSort {
     }
 
 
-    fun partition(array: IntArray, left: Int, right: Int): Int {
+    private fun partition(array: IntArray, left: Int, right: Int): Int {
         val pivot = array[left]
         var i = left
         var j = right
@@ -38,6 +36,7 @@ class QuickSort {
             while (i < j && pivot >= array[i]) {
                 i++
             }
+            println("pivot = $pivot, i = $i, j = $j")
             swap(array, i, j)
         }
 
@@ -50,5 +49,8 @@ class QuickSort {
         val temp = array[b]
         array[b] = array[a]
         array[a] = temp
+
+        showArray(array)
     }
+
 }
